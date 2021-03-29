@@ -15,3 +15,8 @@
     box-shadow: none !important;
     position: relative !important;
 }
+
+.goog-te-gadget .goog-te-combo{
+    width: fit-content;
+    margin: 1rem !important;
+}
