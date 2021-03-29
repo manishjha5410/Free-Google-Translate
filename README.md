@@ -1,2 +1,2 @@
 # Free-Google-Translate
-A free google translateoption
+A free google translate option
