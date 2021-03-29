@@ -1,0 +1,17 @@
+.goog-te-banner-frame{
+    display: none !important;
+}
+
+.top{
+    top:0 !important;
+}
+
+.google_translate_element{
+    width: fit-content;
+}
+
+.goog-text-highlight{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    position: relative !important;
+}
