@@ -1,22 +1,86 @@
-.goog-te-banner-frame{
+.goog-te-banner-frame
+{
     display: none !important;
 }
 
-.top{
+.top
+{
     top:0 !important;
 }
 
-.google_translate_element{
+.google_translate_element
+{
     width: fit-content;
 }
 
-.goog-text-highlight{
+.goog-text-highlight
+{
     background-color: transparent !important;
     box-shadow: none !important;
     position: relative !important;
 }
 
-.goog-te-gadget .goog-te-combo{
+.goog-te-gadget .goog-te-combo
+{
     width: fit-content;
     margin: 1rem !important;
+}
+
+.languageform .autocomplete
+{
+    position: relative;
+    display: inline-block;
+}
+
+.languageform .autocomplete input,.languageform input
+{
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.languageform .autocomplete input[type=text]
+{
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.languageform input[type=submit]
+{
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.autocomplete-items
+{
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div
+{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+.autocomplete-items div:hover
+{
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active
+{
+    background-color: DodgerBlue !important;
+    color: #ffffff;
 }
