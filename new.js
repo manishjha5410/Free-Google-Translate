@@ -32,12 +32,11 @@ function getData()
                 languages.push(key.innerHTML);
             });
         }
+
+        document.querySelector(".goog-te-combo").click();
     }
     catch(E)
-    {}
-
-
-    document.querySelector(".goog-te-combo").click();
+    {console.log("Wait for sometime since internet is slow")}
 
     return languages;
 }
