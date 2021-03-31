@@ -64,3 +64,17 @@
     justify-content: center;
     margin-bottom: 5rem;
 }
+
+
+img.w3-round.w3-image.w3-opacity-min{
+    height: 400px;
+    width: 400px;
+}
+
+body{
+    font-family: "Times New Roman", Georgia, Serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display" !important;
+}
