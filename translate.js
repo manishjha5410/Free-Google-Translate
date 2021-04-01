@@ -1,3 +1,7 @@
+let node = document.createElement('div');
+node.setAttribute('id','google_translate_element');
+document.querySelector('body').appendChild(node);
+
 let dom = document.createElement('script');
 dom.setAttribute('type', 'text/javascript');
 dom.setAttribute('src',"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
@@ -34,11 +38,13 @@ function getData()
         }
 
         document.querySelector(".goog-te-combo").click();
+        return languages;
     }
     catch(E)
-    {console.log("Wait for sometime since internet is slow")}
-
-    return languages;
+    {
+        console.log("Wait for sometime since internet is slow");
+        return [];
+    }
 }
 
 function googleTranslateElementInit()
@@ -55,15 +61,28 @@ function googleTranslateElementInit()
 }
 
 
-function setData()
+function setData(choice)
 {
-    var element = document.querySelector(".goog-te-combo");
-    element.selectedIndex = getIndex();
-    if ("createEvent" in document) {
-        var evt = document.createEvent("HTMLEvents");
-        evt.initEvent("change", false, true);
-        element.dispatchEvent(evt);
+    var languages = getData();
+
+    for(var i=0;i<languages.length;i++)
+        languages[i] = languages[i].toLowerCase();
+
+    choice = choice.toLowerCase();
+    var index = languages.indexOf(choice);
+
+    if(index !== -1)
+    {
+        var element = document.querySelector(".goog-te-combo");
+        element.selectedIndex = index;
+        if ("createEvent" in document) {
+            var evt = document.createEvent("HTMLEvents");
+            evt.initEvent("change", false, true);
+            element.dispatchEvent(evt);
+        }
+        else
+            element.fireEvent("onchange");
     }
     else
-        element.fireEvent("onchange");
+        console.log("Sorry No such Language exist");
 }
