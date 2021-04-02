@@ -84,5 +84,5 @@ function setData(choice)
             element.fireEvent("onchange");
     }
     else
-        console.log("Sorry No such Language exist");
+        console.log("Sorry No such Language exist: " + choice);
 }
