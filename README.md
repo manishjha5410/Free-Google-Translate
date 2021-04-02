@@ -11,22 +11,7 @@ Add Multilingual Feature to Your Website with free Google Translate with just **
 
 ```
 .                   
-├── translate.js            		-> File for JS functionalities
-	|
-	├── sample						        -> Sample Folder
-		|
-		├── images					        -> Images Folder Containing Images
-			|
-			└── tablesetting2.jpg     -> A Sample Food Image
-		|
-		├── input					          -> Contains Demo CSS and JS File
-			|
-			├── input.css			        -> Style File for HTML file
-			└── input.js			        -> JS File for HTML file
-		|
-		├── video					          -> Contains Walkthrough video
-			|
-			└── demo.gif			        -> A Gif file for Walkthroufg
+├── translate.js            	-> File for JS functionalities
 ├── index.html                  -> HTML file for demo              
 ├── LICENSE                     -> For Copy Right Issue
 ├── README.md                   -> ReadMe File
