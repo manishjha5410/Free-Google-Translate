@@ -30,9 +30,17 @@
     display: none !important;
     width: 0;
     height: 0;
+    position: absolute;
+    right: 0;
+    top: -100px;
 }
 
 #google_translate_element
 {
     display: none;
+}
+
+.submit--btn:focus,#translateInput:focus
+{
+    outline: none;
 }

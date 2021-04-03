@@ -75,14 +75,19 @@ function setData(choice)
     {
         var element = document.querySelector(".goog-te-combo");
         element.selectedIndex = index;
-        if ("createEvent" in document) {
+        if ("createEvent" in document)
+        {
             var evt = document.createEvent("HTMLEvents");
             evt.initEvent("change", false, true);
             element.dispatchEvent(evt);
         }
         else
             element.fireEvent("onchange");
+
+        return true;
     }
     else
         console.log("Sorry No such Language exist: " + choice);
+
+    return false;
 }
