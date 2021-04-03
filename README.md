@@ -11,43 +11,43 @@ Add Multilingual Feature to Your Website with free Google Translate with just **
 
 ```
 .
-├── translate.js            		        -> File for JS functionalities
+├── translate.js            		        	-> File for JS functionalities
 	|
-	├── sample						        -> Sample Folder
+	├── sample					-> Sample Folder
 		|
-		├── images					        -> Images Folder Containing Images
+		├── images				-> Images Folder Containing Images
 			|
 			└── tablesetting2.jpg           -> A Sample Food Image
 		|
-		├── input					        -> Contains Demo CSS and JS File
+		├── input				-> Contains Demo CSS and JS File
 			|
-			├── input.css			        -> Style File for HTML file
-			└── input.js			        -> JS File for HTML file
+			├── input.css			-> Style File for HTML file
+			└── input.js			-> JS File for HTML file
 		|
-		├── video					        -> Contains Walkthrough video
+		├── video				-> Contains Walkthrough video
 			|
-			└── demo.gif			        -> A Gif file for Walkthrough
-├── index.html                              -> HTML file for demo
-├── LICENSE                                 -> For Copy Right Issue
-├── README.md                               -> ReadMe File
-└── translate.css                           -> File for adding Styles
+			└── demo.gif			-> A Gif file for Walkthrough
+├── index.html                              		-> HTML file for demo
+├── LICENSE                                 		-> For Copy Right Issue
+├── README.md                               		-> ReadMe File
+└── translate.css                           		-> File for adding Styles
 ```
 
 ## Process
 - Step 1 => Include the `translate.js` [Link](https://github.com/manishjha5410/Free-Google-Translate/blob/main/translate.js "translate.js") and `translate.css` [Link](https://github.com/manishjha5410/Free-Google-Translate/blob/main/translate.css "translate.css") 
-	> As
+> As
  ```html
  <link rel="stylesheet" href="translate.css" />
  <script defer type="text/javascript" src="translate.js"></script>
  ```
 - Step 2 => Just make any one of the following:-
-	>An ul list or a select tag or any one in which you can prefer to add a list of options of languages
+>An ul list or a select tag or any one in which you can prefer to add a list of options of languages
 - Step 3 => There are two utility javascript function
 ```js
 getData(); & setData(language);
 ```
 >**getData()** is used to get all languages it return an array of languages
->**setData()** takes an argument `string` language and change the website language to that language
+>**setData()** takes an argument `string` language and change the website language to that language. If no such language found it would return false else true.
 - Step 4 => Just Call The function setData() which you  prefer to be the webpage Language.
 ```js
 function getIndex()
@@ -55,7 +55,10 @@ function getIndex()
  setData(document.querySelector("#translateInput").value);
 }
 ```
-
+- Step 5 => If you want not to translate just add a notranslate class for that element. Eg:-
+```html
+<p class="notranslate">I am feeling Well</p>
+```
 ## Language Support
 
 <details><summary><b>CLICK ME</b> - Supported Languages</summary>
