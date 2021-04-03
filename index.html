@@ -40,11 +40,11 @@
         </div>
       </div>
     </div>
-    <form autocomplete="off" class="languageform" onsubmit="event.preventDefault()">
+    <form autocomplete="off" class="languageform" onsubmit="event.preventDefault(); getIndex();">
       <div class="autocomplete">
-        <input id="translateInput" type="text" name="myCountry" placeholder="Languages" onchange="getIndex()">
+        <input id="translateInput" type="text" name="myCountry" placeholder="Languages">
       </div>
-      <input type="submit">
+      <input type="submit" class="submit--btn">
     </form>
   </body>
 </html>

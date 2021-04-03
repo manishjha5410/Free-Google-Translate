@@ -1,6 +1,10 @@
 function getIndex()
 {
-    setData(document.querySelector("#translateInput").value);
+    var element = document.querySelector("#translateInput");
+    if(setData(element.value))
+        element.style.border = "1px solid green";
+    else
+        element.style.border = "1px solid red";
 }
 
 window.onload = function()
@@ -32,6 +36,7 @@ window.onload = function()
                         if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase())
                         {
                             b = document.createElement("DIV");
+                            b.classList.add("notranslate");
                             b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
                             b.innerHTML += arr[i].substr(val.length);
                             b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";

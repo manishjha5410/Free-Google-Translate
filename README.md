@@ -10,27 +10,27 @@ Add Multilingual Feature to Your Website with free Google Translate with just **
 ## Project Structure
 
 ```
-.                   
-├── translate.js            		-> File for JS functionalities
+.
+├── translate.js            		        -> File for JS functionalities
 	|
 	├── sample						        -> Sample Folder
 		|
 		├── images					        -> Images Folder Containing Images
 			|
-			└── tablesetting2.jpg     -> A Sample Food Image
+			└── tablesetting2.jpg           -> A Sample Food Image
 		|
-		├── input					          -> Contains Demo CSS and JS File
+		├── input					        -> Contains Demo CSS and JS File
 			|
 			├── input.css			        -> Style File for HTML file
 			└── input.js			        -> JS File for HTML file
 		|
-		├── video					          -> Contains Walkthrough video
+		├── video					        -> Contains Walkthrough video
 			|
-			└── demo.gif			        -> A Gif file for Walkthroufg
-├── index.html                  -> HTML file for demo              
-├── LICENSE                     -> For Copy Right Issue
-├── README.md                   -> ReadMe File
-└── translate.css               -> File for adding Styles
+			└── demo.gif			        -> A Gif file for Walkthrough
+├── index.html                              -> HTML file for demo
+├── LICENSE                                 -> For Copy Right Issue
+├── README.md                               -> ReadMe File
+└── translate.css                           -> File for adding Styles
 ```
 
 ## Process
